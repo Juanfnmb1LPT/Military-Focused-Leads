@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { HashRouter, Routes, Route } from 'react-router-dom'
 import NavBar from './components/NavBar'
 import Home from './pages/Home'
 import VAHelp from './pages/VAHelp'
@@ -6,7 +6,7 @@ import GetStarted from './pages/GetStarted'
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <div className="bg-surface font-body text-on-surface antialiased">
         <NavBar />
         <Routes>
@@ -15,7 +15,7 @@ function App() {
           <Route path="/get-started" element={<GetStarted />} />
         </Routes>
       </div>
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 
